@@ -129,4 +129,4 @@ if __name__ == "__main__":
         model=mlflow.sklearn.load_model(best_model_uri),
         signatures={"predict": {"batchable": True, "batch_dim": 0}},
         metadata=best_params,
-    )
+    )  # /home/codespace/bentoml 에 저장됨
